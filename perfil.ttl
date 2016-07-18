@@ -1,0 +1,24 @@
+@base <http://jonathan-tierno.com/perfil.ttl> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://ex.org/movie#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+<#yo> rdf:type foaf:Person;
+	foaf:name "Jonathan Tierno";
+	foaf:firstName "Jonathan";
+	foaf:surname "Tierno";
+	foaf:birthday "02-08";
+	foaf:age 25;
+	foaf:gender "masculino"@es;
+	foaf:homepage <https://www.facebook.com/jonathan.tierno91>;
+	foaf:based_near <http://sws.geonames.org/3871336/>;
+	foaf:img <https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/10897835_806522786056683_1656625564719672528_n.jpg?oh=2a7d9ed6cecef444af950115a6f27b85&oe=5827E085&__gda__=1479293752_1b04489a9211a3d64c0de490ac5999fb>;
+	foaf:knows < http://aidanhogan.com/perfil.ttl#yo>, <http://harth.org/andreas/foaf#ah> ;
+	foaf:interest wikidata:Q15799 , wikidata:Q782457, wikidata:Q947458;
+	ex:likesMovie wikidata:Q128518 , wikidata:Q208344, wikidata:Q183063;
+	
+<> a foaf:Document ;
+	foaf:name "Perfil FOAF de Jonathan"@es;
+	foaf:primaryTopic <#yo> .
